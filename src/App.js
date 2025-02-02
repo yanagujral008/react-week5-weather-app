@@ -4,6 +4,7 @@ import './App.css';
 export default function App() {
   return (
     <div className="App">
+      <div className="Container">
       <h1>Weather App</h1>
       <footer>
         This project was coded by <a href="https://tranquil-tarsier-93eb74.netlify.app/" target="_blank" rel="noreferrer">Miki.I</a> and is{" "}
@@ -11,6 +12,7 @@ export default function App() {
        open-sourced on GitHub
       </a>
       </footer>
+      </div>
     </div>
   );
 }
