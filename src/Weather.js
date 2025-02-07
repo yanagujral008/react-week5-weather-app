@@ -16,7 +16,7 @@ export default function Weather(props) {
         city: response.data.city,
         humidity:response.data.temperature.humidity,
         description: response.data.condition.description,
-        iconUrl:"https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
+        iconUrl:`http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`
         });
        
     }
