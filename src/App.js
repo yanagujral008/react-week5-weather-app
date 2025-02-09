@@ -13,7 +13,7 @@ export default function App() {
         This project was coded by <a href="https://tranquil-tarsier-93eb74.netlify.app/" target="_blank" rel="noreferrer">Miki.I</a> and is{" "}
       <a href="https://github.com/Mikicanad/react-week5-weather-app" target="_blank" rel="noreferrer">
        open-sourced on GitHub
-      </a>
+      </a>and <a href="https://weatherappweek5mk.netlify.app/" target="_blank" rel="noreferrer">hosted on Netlify</a>
       </footer>
       </div>
     </div>
