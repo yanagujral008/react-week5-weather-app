@@ -10,10 +10,10 @@ export default function App() {
       
       <Weather defaultCity="Vancouver"/>
       <footer>
-        This project was coded by <a href="https://tranquil-tarsier-93eb74.netlify.app/" target="_blank" rel="noreferrer">Miki.I</a> and is{" "}
-      <a href="https://github.com/Mikicanad/react-week5-weather-app" target="_blank" rel="noreferrer">
-       open-sourced on GitHub
-      </a> and <a href="https://weatherappweek5mk.netlify.app/" target="_blank" rel="noreferrer">hosted on Netlify</a>
+        This project was coded by <a href="https://tranquil-tarsier-93eb74.netlify.app/" target="_blank" rel="noopener noreferrer">Miki.I</a> and is{" "}
+      <a href="https://github.com/Mikicanad/react-week5-weather-app" target="_blank" rel="noopener noreferrer">
+        open-sourced on GitHub
+      </a> and <a href="https://weatherappweek5mk.netlify.app/" target="_blank" rel="noopener noreferrer">hosted on Netlify</a>
       </footer>
       </div>
     </div>

@@ -16,29 +16,36 @@ export default function WeatherForecast(props){
         setForecast(response.data.daily);
         setLoaded(true);
     }
+
+    function load() {
+        let apiKey="3c0eca18f3a2743b8tdo8c93b0a6483f";
+            let longitude = props.coordinates.longitude;
+            let latitude = props.coordinates.latitude;
+            let apiUrl=`https://api.shecodes.io/weather/v1/forecast?lon=${longitude}&lat=${latitude}&key=${apiKey}&units=metric`;
+                
+            axios.get(apiUrl).then(handleResponse);
+    }
+    
     if (loaded) {
         return (
-          <div className="WeatherForecast">
-            <div className="row">
-              {forecast.map(function (dailyForecast, index) {
-                if (index < 5) {
-                  return (
-                    <div className="col" key={index}>
-                      <WeatherForecastDay data={dailyForecast} />
+            <div className="WeatherForecast">
+                <div className="row">
+                    {forecast.map(function (dailyForecast, index) {
+                    if (index < 5) {
+                        return (
+                        <div className="col" key={index}>
+                        <WeatherForecastDay data={dailyForecast} />
                     </div>
-                  );
+                );
+                } else {
+                    return null;
                 }
               })}
             </div>
           </div>
         );
         } else {
-            let apiKey="3c0eca18f3a2743b8tdo8c93b0a6483f";
-            let longitude = props.coordinates.longitude;
-            let latitude = props.coordinates.latitude;
-            let apiUrl=`https://api.shecodes.io/weather/v1/forecast?lon=${longitude}&lat=${latitude}&key=${apiKey}&units=metric`;
-                
-            axios.get(apiUrl).then(handleResponse);
+            load();
         
             return null; 
         }
