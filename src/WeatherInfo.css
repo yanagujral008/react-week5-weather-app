@@ -1,0 +1,30 @@
+.WeatherInfo {
+    margin-top: 20px;
+  }
+
+  .WeatherInfo .city {
+    font-size: 40px;
+    margin: 40px 10px 20px;
+    color: rgb(74, 40, 59);
+  }
+
+  .WeatherInfo li{
+    margin: auto 20px;
+    color:rgb(110, 109, 109);
+  }
+
+  
+  
+  .WeatherInfo .temperature-container {
+    margin-top: 30px;
+    align-items: center;
+  }
+
+  .WeatherInfo strong {
+    color:rgb(255, 79, 103);
+  }
+
+  .WeatherInfo span.unit {
+    font-size: 30px;
+  }
+  

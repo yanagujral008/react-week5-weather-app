@@ -1,0 +1,9 @@
+.WeatherForecast-temperature-max {
+    color: rgb(246, 82, 130);
+    padding-right: 4px;
+}
+
+.WeatherForecast-temperature-min {
+    color: #de6a8b;
+    padding-left: 4px;
+}

@@ -1,12 +1,30 @@
 .Weather {
     font-family: arial, sans-serif;
     border: 1px solid #dadde1;
+    box-shadow: 0px 30px 50px rgba(65, 50, 100, 0.08);
     padding: 16px; 
     border-radius: 4px;
-    color: rgb(66, 64, 75);
-    background: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);
+    color: rgb(148, 120, 136);
+    background: rgba(247, 225, 233, 0.739);
 }
 
+.Weather .btn {
+  background: #f986d7;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 15px 0;
+  border: none;
+  height: 50px;
+}
+
+.Weather .btn:hover {
+  background: #f65ec8;
+
+}
+.Weather .search-input::placeholder {
+  line-height: 20px;
+  color: rgba(39, 33, 66, 0.4);
+}
 
   .Weather h1 {
     font-size: 24px;
