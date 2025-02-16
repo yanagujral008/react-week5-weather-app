@@ -1,35 +1,40 @@
 .App {
-    max-width: 500px;
+    max-width: 900px;
     margin: 60px auto;
+    padding: 20px;
+    
 }
 
-.App footer {
-    text-align: center;
-    font-size: 11px;
-    margin: 20px 0;
-}
-
-.App footer a {
-    display: inline-block;
-    position: relative;
-    color: rgb(190, 73, 135);
-    text-decoration: none;
-    transition: .3s;
-}
-
-.App footer a::after {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    content: '';
-    width: 0;
-    height: 2px;
-    background-color: rgb(190, 73, 135);
-    transition: .3s;
-    transform: translateX(-50%);
-
-}
-.App footer a:hover::after {
+.App .Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 100%;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .App {
+        max-width: 100%;
+        margin: 30px 10px;  
+        padding: 15px;
+    }
+
+    .App footer {
+        font-size: 10px;  
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .App {
+        margin: 20px 5px; 
+    }
+
+    .App footer {
+        font-size: 9px; 
+    }
 }
 
